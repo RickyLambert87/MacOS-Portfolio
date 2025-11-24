@@ -67,7 +67,7 @@ const resetIcons = () =>
               aria-label={name}
               data-tooltip-id="dock-tooltip"
               data-tooltip-content={name}
-              data-toolti-delay-show={150}
+              data-tooltip-delay-show={150}
               disabled={!canOpen}
               onClick={() => toggleApp({ id, canOpen })}>
               <img src={`/images/${icon}`}
