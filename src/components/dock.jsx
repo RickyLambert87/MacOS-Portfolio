@@ -14,7 +14,7 @@ const Dock = () => {
     const icons = dock.querySelectorAll(".dock-icon");
 
     const animateIcons = (mouseX) => {
-      const { left } = dock.getBoundingClientRect()
+      const { left } = dock.getBoundingClientRect();
       icons.forEach((icon) => {
         const { left: iconLeft, width } = icon.getBoundingClientRect();
         const center = iconLeft - left + width / 2;
