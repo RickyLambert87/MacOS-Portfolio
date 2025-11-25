@@ -7,7 +7,7 @@ import { useLayoutEffect, useRef } from "react";
 const WindowWrapper = (Component, windowKey) => {
   const Wrapped = (props) => {
     const { focusWindow, windows } = useWindowStore();
-    const { isOpen, zindex } = windows[windowKey];
+    const { isOpen, zIndex } = windows[windowKey];
     const ref = useRef(null);
 
     useGSAP(() => {
